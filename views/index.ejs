@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book's Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Books Riview</h1>
+    <%for(book of books){%>
+        <div class="book">
+            <h2 class="bookName">Book Name: <%= book.bookName %></h2>
+            <h2 class="author">Author: <%= book.author %> </h2>
+            <a href="/rbook/<%= book.id %>">View Review!</a><br>
+
+            <form method="post" action="/rbook/<%= book.id %>?_method=DELETE">
+                <button>Delete</button>
+            </form>
+
+        </div>
+        <br>
+    <%}%>
+    <a href="/rbook/new"> Add new! </a>
+</body>
+</html>

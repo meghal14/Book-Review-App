@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4f6f9;
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+    color: #4f46e5;
+    margin-bottom: 35px;
+    font-size: 40px;
+}
+
+.book{
+    width: 70%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+
+.book h2{
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.author{
+    color: #555;
+    font-style: italic;
+}
+
+.book h3{
+    color: #4f46e5;
+    margin: 12px 0;
+}
+
+.book p{
+    color: #555;
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+.actions{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.delete-btn{
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.delete-btn:hover{
+    background: #b91c1c;
+}
+
+.add-btn{
+    display: block;
+    width: 180px;
+    margin: 40px auto;
+    text-align: center;
+    background: #10b981;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.add-btn:hover{
+    background: #047857;
+}

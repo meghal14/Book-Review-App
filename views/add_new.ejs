@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding new Reiview</title>
+</head>
+<body>
+    <h1>Add New Book Review</h1>
+
+<div class="container">
+    <form action="/rbook" method="POST">
+
+        <input
+            type="text"
+            name="bookName"
+            placeholder="📖 Book Name"
+            required
+        ><br><br>
+
+        <input
+            type="text"
+            name="author"
+            placeholder="✍️ Author Name"
+            required
+        ><br><br>
+
+        <input
+            type="text"
+            name="reviewer"
+            placeholder="👤 Your Name"
+            required
+        ><br><br>
+
+        <input
+            type="number"
+            name="rating"
+            placeholder="⭐ Rating (1-10)"
+            min="1"
+            max="10"
+            required
+        ><br><br>
+
+        <textarea
+            name="review"
+            rows="6"
+            placeholder="Write your review..."
+            required
+        ></textarea>
+        <br><br>
+
+        <button type="submit">Submit Review</button>
+    </form>
+</div>
+</body>
+</html>
